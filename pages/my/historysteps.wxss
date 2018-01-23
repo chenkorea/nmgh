@@ -1,0 +1,33 @@
+/* pages/my/historysteps.wxss */
+.rank-list-view {
+  position: relative;
+  width: 100%;
+  height: 120rpx;
+  padding: 0 20rpx;
+  border-bottom: 1rpx solid #F0F0F0;
+  background: white;
+}
+
+.steps {
+  position: absolute;
+  left: 20rpx;
+  top: 40rpx;
+  color: #36D88E;
+  font-size: 40rpx;
+  font-weight: 500;
+  text-align: left;
+  width: 100rpx;
+  height: 40rpx;
+}
+
+.step-riqi {
+  position: absolute;
+  right: 50rpx;
+  top: 40rpx;
+  color: #999999;
+  font-size: 30rpx;
+  font-weight: 200;
+  text-align: right;
+  width: 200rpx;
+  height: 120rpx;
+}

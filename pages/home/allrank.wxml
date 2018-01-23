@@ -1,0 +1,28 @@
+<!--pages/home/allrank.wxml-->
+
+<view class="container">
+<!-- 列表  -->
+    <view class='rank-view'>
+      <view class='rank-list-view'  wx:for="{{rankDatas}}" wx:key="{{index}}">
+        <text class="{{index >= 100? 'rank-small':'rank-text'}}"  hidden='{{index + 1 < 4}}'>{{index + 1}}</text>
+        <image class='rank-img' src='../image/diyi.png' hidden='{{index + 1 != 1}}'></image>
+        <image class='rank-img' src='../image/dier.png' hidden='{{index + 1 != 2}}'></image>
+        <image class='rank-img' src='../image/disan.png' hidden='{{index + 1 != 3}}'></image> 
+        <image class='head-img' src='{{item.head_img}}'></image>
+        <text class='name-text'>{{item.nickname}}</text>
+        <text class='step-text'>{{item.steps}}</text>
+        <view class='zan-view'>
+          <view class='zan-con'>
+            <text class='zan-num'>{{item.zan_num == 0 || item.zan_num == undefined ? '0' : item.zan_num}}</text>
+            <image class='heart-img' src='../image/heart.png' hidden="{{item.is_my == '1'}}" data-stepid='{{item.id}}' data-type='1' data-ismy='{{item.is_my}}' data-zanuser='{{item.user_id}}'   bindtap='addLikeStep'></image>
+            <image class='heart-img' src='../image/heart_sel.png' hidden="{{item.is_my == '0'}}" data-stepid='{{item.id}}' data-type='0' data-ismy='{{item.is_my}}' data-zanuser='{{item.user_id}}'  bindtap='addLikeStep'></image>
+          </view>
+        </view>
+      </view>
+
+
+    </view>
+    <view class='more-view' bindtap='addMoreData'>加载更多</view>
+
+  
+</view>

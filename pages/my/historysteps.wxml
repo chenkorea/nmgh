@@ -1,0 +1,8 @@
+<!--pages/my/historysteps.wxml-->
+<!-- 列表  -->
+<view class='rank-view'>
+  <view class='rank-list-view'  wx:for="{{rankDatas}}" wx:key="{{index}}">
+    <text class='steps'>{{item.steps}}</text>
+    <text class='step-riqi'>{{item.step_riqi}}</text>
+  </view>
+</view>

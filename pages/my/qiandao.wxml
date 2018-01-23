@@ -1,0 +1,12 @@
+<view class='main-view'>
+
+  <!-- 猫眼展示 -->
+  <view class="air_container">
+    <view class="mv_item" wx:for="{{qiandaoShowAr}}" wx:key="index" data-id="{{index}}" data-type="open" catchtap="addQianDao">
+      <view class="mv_pic">
+        <image src="{{item}}" mode="scaleToFit" class="pic"></image>
+        <text class="date-text">{{index + 1}}日</text>
+      </view>
+    </view>
+  </view>
+</view>

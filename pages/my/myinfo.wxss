@@ -1,0 +1,30 @@
+/* pages/my/myinfo.wxss */
+.item-view {
+  width: 100%;
+  margin: 20rpx;
+}
+
+.title-text {
+  color: #666;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.value-text {
+  width: 95%;
+  height: 80rpx;
+  color: #333;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.save-view {
+  width: 95%;
+  font-size: 36rpx;
+  margin-left: 20rpx;
+  color: #FFF;
+  background: #36D88E;
+  text-align: center;
+  padding: 20rpx 0;
+  border-radius:10rpx; 
+}

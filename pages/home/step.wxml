@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="page-head">
+		<!-- <view class="page-button">
+			<text class="page-target">PH <text class="target-value">6.8</text></text>
+			<text class="page-target">TDS <text class="target-value">58</text></text>
+		</view> -->
+		<view class="page-canvas">
+			<canvas canvas-id="Temp"></canvas>
+		</view>
+	<!-- </view>
+	<view class="page-body">
+		<view class="page-state">智能鱼缸系统已为您保驾护航365天，目前各项指标正常</view>
+	</view>
+	<view class="page-foot">
+		<view class="clearfix">
+			
+			<progress class="fl" percent="40" stroke-width="12" active />
+		</view>  -->
+	</view>
+</view>

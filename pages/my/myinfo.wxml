@@ -1,0 +1,29 @@
+<!--pages/my/myinfo.wxml-->
+<view class='main-view'>
+  <view class='item-view'>
+    <text class='title-text'>真实姓名：</text>
+    <input class='value-text' type='text' placeholder='请输入真实姓名' bindinput="bindNameInput" value='{{myUserInfo.realname}}'></input>
+  </view>
+  <view class='item-view'>
+    <text class='title-text'>年龄：</text>
+    <input class='value-text' type='number' placeholder='请输入年龄' bindinput="bindAgeInput" value='{{myUserInfo.age}}'></input>
+  </view>
+  <view class='item-view'>
+    <text class='title-text'>身份证号：</text>
+    <input class='value-text' type='idcard' placeholder='请输入身份证号码' bindinput="bindIdInput" value='{{myUserInfo.id_number}}'></input>
+  </view>
+  <view class='item-view'>
+    <text class='title-text'>联系电话：</text>
+    <input class='value-text' type='idcard' placeholder='请输入个人联系电话' bindinput="bindUserPhoneInput" value='{{myUserInfo.user_phone}}'></input>
+  </view>
+  <view class='item-view'>
+    <text class='title-text'>所在单位：</text>
+    <input class='value-text' type='text' placeholder='请输入所在单位' bindinput="bindDepInput" value='{{myUserInfo.department}}'></input>
+  </view>
+  <view class='item-view'>
+    <text class='title-text'>单位联系电话：</text>
+    <input class='value-text' type='text' placeholder='请输入所在单位联系电话' bindinput="bindDepPhoneInput" value='{{myUserInfo.dep_phone}}'></input>
+  </view>
+
+  <view class='save-view' bindtap='saveInfo'>保存</view>
+</view>

@@ -1,2 +1,54 @@
 <!--advert.wxml-->
-<text>advert.wxml</text>
+<view class="main-view">
+  <scroll-view>
+
+    <view class='content-view'>
+      <!-- 顶部view -->
+      <image src='https://www.gzwnks.com/sbb-web/upload/headericon/wudangtop1.jpg' class='top-view'></image>
+      
+      <!-- 菜单栏  -->
+      <view class='menu-main-view'>
+        <view class='menu-view'>
+          <view class='menu-con-view-1' data-type='1' bindtap='toNormal'>
+            <view class='menu-n-view'>
+              <image class='menu-img' src='../image/bn2.png'></image>
+              <text class='menu-name'>常规赛</text>
+            </view>
+          </view>
+
+          <view class='menu-con-view-2' data-type='2' bindtap='toNormal'>
+            <view class='menu-n-view'>
+              <image class='menu-img' src='../image/bn3.png'></image>
+              <text class='menu-name'>月度赛</text>
+            </view>
+          </view>
+
+          <view class='menu-con-view-3' data-type='3' bindtap='toNormal'>
+            <view class='menu-n-view'>
+              <image class='menu-img' src='../image/bn4.png'></image>
+              <text class='menu-name'>长期赛</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+       <view class='null-view-o'></view> 
+
+      <view class='ad-view'>
+        <view class='ad-list-view'  wx:for="{{allShowAdverts}}" wx:key="{{index}}" data-adid='{{item.id}}' bindtap='toAdDetail'>
+          <view class="item-view">
+            <image class="ad-img" mode="aspectFill" src="{{item.ad_imgs}}"></image>
+            <view class='line-view'></view>
+            <view class='status-view' hidden="{{item.taps == '0'}}">进行中</view>
+            <view class='status-view-end' hidden="{{item.taps == '1'}}">已结束</view>
+            <view class="title">{{item.ad_name}}</view>
+            <view class="time-view">活动时间：{{item.ad_start_date}}至{{item.ad_end_date}}</view>
+          </view>
+          <view class='null-view'></view>
+        </view>
+      </view>
+    </view>
+    
+  </scroll-view>
+
+</view>

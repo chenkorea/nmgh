@@ -1,0 +1,24 @@
+<!--advert.wxml-->
+<view class="main-view">
+  <scroll-view>
+
+    <view class='content-view'>
+
+      <view class='ad-view'>
+        <view class='ad-list-view'  wx:for="{{allShowAdverts}}" wx:key="{{index}}" data-adid='{{item.id}}' bindtap='toAdDetail'>
+          <view class="item-view">
+            <image class="ad-img" mode="aspectFill" src="{{item.ad_imgs}}"></image>
+            <view class='line-view'></view>
+            <view class='status-view' hidden='{{item.taps == 0}}'>进行中</view>
+            <view class='status-view-end'  hidden='{{item.taps == 1}}'>已结束</view>
+            <view class="title">{{item.ad_name}}</view>
+            <view class="time-view">活动时间：{{item.ad_start_date}}至{{item.ad_end_date}}</view>
+          </view>
+          <view class='null-view'></view>
+        </view>
+      </view>
+    </view>
+    
+  </scroll-view>
+
+</view>

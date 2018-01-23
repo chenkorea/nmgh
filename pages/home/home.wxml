@@ -1,2 +1,103 @@
 <!--home.wxml-->
-<text>home.wxml</text>
+<view class="main-view">
+  <scroll-view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://www.bz55.com/uploads/allimg/150701/140-150F1142638.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img2.imgtn.bdimg.com/it/u=3259946169,3752632959&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img4.imgtn.bdimg.com/it/u=227953490,3054069314&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img0.imgtn.bdimg.com/it/u=2097996470,2706206864&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img4.imgtn.bdimg.com/it/u=268207721,2912693885&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img2.imgtn.bdimg.com/it/u=3354182219,1084727599&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img2.imgtn.bdimg.com/it/u=1751399435,2367309321&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://www.bz55.com/uploads/allimg/150701/140-150F1142638.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img2.imgtn.bdimg.com/it/u=3259946169,3752632959&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img4.imgtn.bdimg.com/it/u=227953490,3054069314&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img0.imgtn.bdimg.com/it/u=2097996470,2706206864&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img4.imgtn.bdimg.com/it/u=268207721,2912693885&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img2.imgtn.bdimg.com/it/u=3354182219,1084727599&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+     <view class="item-view">
+        <image class="left-img" mode="aspectFill" src="http://img2.imgtn.bdimg.com/it/u=1751399435,2367309321&fm=26&gp=0.jpg"></image>
+        <view class="right-view">
+          <view class="title">朗读时大叔家都是的撒多撒多vs</view>
+          <view class="time">2012-11-11 21:21</view>
+        </view>
+     </view>
+  </scroll-view>
+</view>

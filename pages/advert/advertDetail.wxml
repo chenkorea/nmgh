@@ -1,0 +1,74 @@
+<view class='main-view'>
+  <view class='title-view'>{{adVertDetailShowVo.ad_name}}</view>
+  <view class='line-view'></view>
+
+  <view class='title-view'>活动内容</view>
+  <view class='line-view'></view>
+
+  <view class='content-view'>
+    <text class='content-text'>{{adVertDetailShowVo.ad_content}}</text>
+  </view>
+  
+
+  <view class='title-view'>活动时间</view>
+  <view class='line-view'></view>
+
+  <view class='content-view'>
+    <text class='content-text'>活动时间：{{adVertDetailShowVo.ad_start_date}} 至 {{adVertDetailShowVo.ad_end_date}}</text>
+  </view>
+
+  <view class='title-view'>活动图片</view>
+  <view class='line-view'></view>
+  <!-- 猫眼展示 -->
+  <view class="air_container">
+    <view class="mv_item" wx:for="{{adVertDetailShowVo.ad_imgs}}" wx:key="index" data-id="{{index}}" data-type="open" catchtap="seeMovieInfo">
+      <view class="mv_pic">
+        <image src="{{item}}" mode="scaleToFit" class="pic" bindtap='openAdImgs'></image>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='title-view'>活动奖励</view>
+  <view class='line-view'></view>
+  <view class='content-view'>
+    <text class='content-text'>
+      {{adVertDetailShowVo.reward_content}}
+    </text>
+  </view>
+
+  <view class='title-view'>奖品图片</view>
+  <view class='line-view'></view>
+  <!-- 猫眼展示 -->
+  <view class="air_container">
+    <view class="mv_item" wx:for="{{adVertDetailShowVo.reward_imgs}}" wx:key="index" data-id="{{index}}" data-type="open" catchtap="seeMovieInfo">
+      <view class="mv_pic">
+        <image src="{{item}}" mode="scaleToFit" class="pic" bindtap='openRwardImgs'></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 排名信息 -->
+  <view class='title-view' hidden='{{is_step_ad == 0}}'>活动排名</view>
+  <view class='line-view'></view>
+  <!-- 列表  -->
+  <view class='rank-view' hidden='{{is_step_ad == 0}}'>
+    <view class='rank-list-view'  wx:for="{{rankDatas}}" wx:key="{{index}}">
+      <text class='rank-text' hidden='{{index + 1 < 4}}'>{{index + 1}}</text>
+      <image class='rank-img' src='../image/diyi.png' hidden='{{index + 1 != 1}}'></image>
+      <image class='rank-img' src='../image/dier.png' hidden='{{index + 1 != 2}}'></image>
+      <image class='rank-img' src='../image/disan.png' hidden='{{index + 1 != 3}}'></image> 
+      <image class='head-img' src='{{item.head_img}}'></image>
+      <text class='name-text'>{{item.nickname}}</text>
+      <text class='step-text'>{{item.allsteps}}</text>
+      <view class='zan-view'>
+        <view class='zan-con'>
+          <text class='zan-num'>{{item.zan_num == 0 || item.zan_num == undefined ? '0' : item.zan_num}}</text>
+          <image class='heart-img' src='../image/heart.png' hidden='{{item.zan_num > 0}}'></image>
+          <image class='heart-img' src='../image/heart_sel.png' hidden='{{item.zan_num == 0 || item.zan_num == undefined}}'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='more-view' bindtap='toMoreView' hidden='{{rankDatas.length < 20}}'>查看更多</view>
+</view>

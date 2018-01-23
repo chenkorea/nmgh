@@ -1,0 +1,418 @@
+/**index.wxss**/
+page{
+	/* background-color: #09131c; */
+  background-color: #FFF;
+	background-attachment:fixed;
+}
+.container {
+	height: 100%;
+	width: 100%;
+	color: #a1c5e8;
+	font-size: 30rpx;
+  position: relative;
+}
+/*页面头部start*/
+.page-head {
+	height: 60%;
+}
+
+.page-button {
+	height: 20%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20rpx;
+}
+
+.page-target {
+	display: block;
+	width: 169rpx;
+	height: 53rpx;
+	text-align: center;
+	line-height: 53rpx;
+	/* background-color: #172129; */
+	border-radius: 35rpx;
+	color: #333;
+	font-size: 28rpx;
+}
+
+.target-value {
+	color: #333;
+}
+
+.page-canvas {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page-canvas canvas {
+	width: 100%;
+	height: 100%;
+}
+/*页面头部end*/
+
+/*鱼缸指标start*/
+.page-state {
+	width: 85%;
+	margin: 20rpx auto;
+	/* background-color: #060d14; */
+	border-radius: 55rpx;
+	padding: 20rpx 70rpx;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 28rpx;
+	color:#576E87;
+}
+
+.canvas-target {
+	width:100%;
+	height:200rpx;
+	margin:50rpx 0;
+	display: flex;
+	justify-content: space-around;
+}
+.canvas-target .canvas-view{
+	width:33%;
+	height:100%;
+	position:relative;
+}
+.canvas-target p{
+	width:20px;
+	height:20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -10px;
+	z-index: 9999999;
+	background-color: #ffffff;
+}
+.canvas-target canvas {
+	width: 80%;
+	height: 80%;
+	margin-left: 10%;
+}
+.canvas-target text{
+	display: block;
+	width: 100%;
+	height:20%;
+	font-size: 22rpx;
+	color:#576E87;
+	text-align: center;
+}
+/*开关*/
+.page-switch{
+	width: 95%;
+	margin: 20rpx auto;
+	background-color: #172129;
+	border-radius: 18rpx;
+}
+.switch-header{
+	width: 100%;
+	font-size: 34rpx;
+	padding:20rpx 2.5%;
+	border-bottom: 1px solid #252e36;
+	box-sizing:border-box;
+}
+.switch-body{
+	width:95%;
+	margin: 40rpx auto 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content:flex-start;
+}
+.switch-body .switch-content{
+	width:33%;
+	height:120rpx;
+}
+.switch-content text{
+	margin-right:10rpx;
+}
+/*鱼缸指标end*/
+
+/*参数设置start*/
+.page-parameter{
+	width:95%;
+	margin: 50rpx auto;
+	background-color: #172129;
+	border-radius: 18rpx;
+}
+.parameter-header{
+	width: 100%;
+	font-size: 34rpx;
+	padding:20rpx 2.5%;
+	border-bottom: 1px solid #252e36;
+	box-sizing:border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.parameter-reset{
+	font-size: 24rpx;
+	color: #4E6375;
+}
+.parameter-reset text{
+	width:29rpx;
+	height:29rpx;
+	display: inline-block;
+	background-color:#fff;
+	margin-left:15rpx;
+
+}
+.parameter-body{
+	width:95%;
+	margin: 40rpx auto 0;
+	
+}
+.white-light , .blue-light{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20rpx 0;
+}
+.parameter-name{
+	width: 100rpx;
+	font-size: 26rpx;
+	color: #A1C5E8;
+}
+.light-off,.light-on{
+	width:29rpx;
+	height:29rpx;
+	display: inline-block;
+	background-color:#fff;
+	vertical-align: top;
+}
+.white-light-slider , .blue-light-slider{
+	width:80%;
+	padding: 0 20rpx;
+}
+/*参数设置end*/
+
+.target-num {
+  /* color: #36D88E; */
+  color: #00B060;
+  font-size: 32rpx;
+  margin: 0 10rpx;
+  font-weight: 700;
+}
+
+.bgimg {
+  margin-left: -50%;
+  width: 200%;
+  height: 400rpx;
+  border-bottom-left-radius: 150%;
+  border-bottom-right-radius: 150%;
+}
+
+.zhuzhuangtu {
+  width: 100%;
+  transform: rotate(-90deg);
+  margin-top: -70%;
+}
+
+.sssss {
+  margin: 12.35%;
+  width: 10%;
+}
+
+.rank-list-view {
+  position: relative;
+  width: 100%;
+  height: 140rpx;
+  background-color: #FFF;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+.rank-list-view-bai {
+  position: relative;
+  width: 100%;
+  height: 140rpx;
+  margin-top: -50rpx;
+  background-color: #36D88E;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+.rank-text {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #444444;
+}
+
+.rank-small {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #444444;
+}
+
+.rank-text-bai {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #FFF;
+}
+
+.rank-small-bai {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #FFF;
+}
+
+.rank-img {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.head-img {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 70rpx;
+  margin-top: 35rpx;
+  border: 1rpx solid #FFF;
+  border-radius: 38rpx;
+  background: #F0F0F0;
+}
+
+.head-img-bai {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 70rpx;
+  margin-top: 35rpx;
+  border: 2rpx solid #FFF;
+  border-radius: 38rpx;
+}
+
+.name-text {
+  position: absolute;
+  left: 160rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #333;
+  font-size: 35rpx;
+}
+
+.name-text-bai {
+  position: absolute;
+  left: 160rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #FFF;
+  font-size: 35rpx;
+}
+
+.step-text {
+  position: absolute;
+  right: 100rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #35D2AB;
+  text-align: right;
+  font-size: 40rpx; 
+}
+
+.step-text-bai {
+  position: absolute;
+  right: 100rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #FFF;
+  text-align: right;
+  font-size: 40rpx; 
+}
+
+.zan-view {
+  position: absolute;
+  right: 0;
+  top: 35rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.zan-con {
+  position: relative;
+}
+
+.heart-img {
+  position: absolute;
+  left: 0;
+  top: 35rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.zan-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40rpx;
+  height: 30rpx;
+  color: #666;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.zan-num-bai {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40rpx;
+  height: 30rpx;
+  color: #FFF;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.more-view {
+  text-align: center;
+  width: 100%;
+  height: 100rpx;
+  color: #999999;
+  font-size: 30rpx;
+}
+
+.zhuzhuangtu-xview {
+  width: 100%;
+  height: 100rpx;
+  margin-top: -120rpx;
+  
+}
+
+.x-text {
+  text-align: center;
+  color: #666;
+  font-size: 18rpx;
+  width: 18rpx;
+  height: 19rpx;
+  margin:0 6%;
+}

@@ -1,0 +1,165 @@
+/* pages/advert/advertDetail.wxss */
+.main-view {
+  
+}
+
+.air_container {
+  width: 100%;
+  padding: 10rpx;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  padding-top: 10rpx;
+}
+
+.mv_item {
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  flex: 0 0 25%;
+  height: 200rpx;
+  width: 200rpx;
+  margin-top: 10rpx;
+  border: 1px solid #F0F0F0;
+}
+
+.mv_pic
+{
+  width: 100%;
+  height: 100%;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+}
+
+.title-view {
+  margin: 20rpx;
+  color: #333;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.line-view {
+  height: 2rpx;
+  margin: 0 20rpx;
+  background: #F0F0F0;
+}
+
+.content-view {
+  padding: 20rpx;
+  color: #111;
+  font-size: 30rpx;
+}
+
+.content-text {
+  width: 100%;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.rank-list-view {
+  position: relative;
+  width: 100%;
+  height: 140rpx;
+  background-color: #FFF;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+
+.rank-text {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #444444;
+}
+
+
+.rank-img {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.head-img {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 70rpx;
+  margin-top: 35rpx;
+  border: 1rpx solid #FFF;
+  border-radius: 38rpx;
+  background: #F0F0F0;
+}
+
+
+.name-text {
+  position: absolute;
+  left: 160rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #333;
+  font-size: 35rpx;
+}
+
+
+.step-text {
+  position: absolute;
+  right: 100rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #35D2AB;
+  text-align: right;
+  font-size: 40rpx; 
+}
+
+
+.zan-view {
+  position: absolute;
+  right: 0;
+  top: 35rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.zan-con {
+  position: relative;
+}
+
+.heart-img {
+  position: absolute;
+  left: 0;
+  top: 35rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.zan-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40rpx;
+  height: 30rpx;
+  color: #666;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.more-view {
+  text-align: center;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 100rpx;
+  color: #999999;
+  font-size: 30rpx;
+}

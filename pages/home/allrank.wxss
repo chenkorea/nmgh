@@ -1,0 +1,188 @@
+/* pages/home/allrank.wxss */
+.rank-list-view {
+  position: relative;
+  width: 100%;
+  height: 140rpx;
+  background-color: #FFF;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+.rank-list-view-bai {
+  position: relative;
+  width: 100%;
+  height: 140rpx;
+  margin-top: -50rpx;
+  background-color: #36D88E;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+.rank-text {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #444444;
+}
+
+.rank-small {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #444444;
+}
+
+
+.rank-text-bai {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #FFF;
+}
+
+.rank-img {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.head-img {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 70rpx;
+  margin-top: 35rpx;
+  border: 1rpx solid #FFF;
+  border-radius: 38rpx;
+  background: #F0F0F0;
+}
+
+.head-img-bai {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 70rpx;
+  margin-top: 35rpx;
+  border: 2rpx solid #FFF;
+  border-radius: 38rpx;
+}
+
+.name-text {
+  position: absolute;
+  left: 160rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #333;
+  font-size: 35rpx;
+}
+
+.name-text-bai {
+  position: absolute;
+  left: 160rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #FFF;
+  font-size: 35rpx;
+}
+
+.step-text {
+  position: absolute;
+  right: 100rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #35D2AB;
+  text-align: right;
+  font-size: 40rpx; 
+}
+
+.step-text-bai {
+  position: absolute;
+  right: 100rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #FFF;
+  text-align: right;
+  font-size: 40rpx; 
+}
+
+.zan-view {
+  position: absolute;
+  right: 0;
+  top: 35rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.zan-con {
+  position: relative;
+}
+
+.heart-img {
+  position: absolute;
+  left: 0;
+  top: 35rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.zan-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40rpx;
+  height: 30rpx;
+  color: #666;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.zan-num-bai {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40rpx;
+  height: 30rpx;
+  color: #FFF;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.more-view {
+  text-align: center;
+  width: 100%;
+  height: 100rpx;
+  color: #999999;
+  font-size: 30rpx;
+}
+
+.zhuzhuangtu-xview {
+  width: 100%;
+  height: 100rpx;
+  margin-top: -120rpx;
+  
+}
+
+.x-text {
+  text-align: center;
+  color: #666;
+  font-size: 18rpx;
+  width: 18rpx;
+  height: 19rpx;
+  margin:0 6%;
+}

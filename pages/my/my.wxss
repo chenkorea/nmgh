@@ -1,1 +1,61 @@
 /* my.wxss */
+.main-view {
+  background: #FFFFFF;
+}
+
+.top-view {
+  width: 100%;
+  height: 300rpx;
+  border-bottom: 20rpx solid #F0F0F0;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513709144441&di=d2cec2397901a00044ab4b78207a72c0&imgtype=0&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201212%2F21%2F20121221221530_sW845.thumb.700_0.png');
+}
+
+.head-view {
+  
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  margin-top: 50rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 2rpx solid #FFF;
+}
+
+.name-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40rpx;
+  font-size: 30rpx;
+  color: white;
+  font-weight: 700;
+  margin-top: 20rpx;
+}
+
+.item-view {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #F0F0F0;
+  background: white;
+}
+
+.item-img {
+  width: 45rpx;
+  height: 40rpx;
+  margin: 30rpx;
+}
+
+.item-text {
+  width: 100%;
+  height: 40rpx;
+  margin-top: 5rpx;
+  font-size: 30rpx;
+  color: #333333;
+}
+

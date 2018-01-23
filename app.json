@@ -1,37 +1,47 @@
 {
   "pages": [
-    "pages/home/home",
+    "pages/home/index",
     "pages/advert/advert",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/home/home",
+    "pages/advert/allAdvert",
+    "pages/advert/advertDetail",
+    "pages/my/qiandao",
+    "pages/my/historyadvert",
+    "pages/my/historysteps",
+    "pages/home/zanuser",
+    "pages/my/myinfo",
+    "pages/home/allrank",
+    "pages/advert/allavrank"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#36D88E",
+    "navigationBarTitleText": "健步走",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#ddd",
-    "selectedColor": "#FF2222",
-    "backgroundColor": "#fff",
+    "color": "#999999",
+    "selectedColor": "#00CD66",
+    "backgroundColor": "#FFF",
     "borderStyle": "#FFF",
     "list": [
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/home/index",
         "iconPath": "pages/image/home_nor.png",
-        "selectedIconPath": "pages/image/home_sel.png",
-        "text": "作品"
+        "selectedIconPath": "pages/image/home.png",
+        "text": "健步走"
       },
       {
         "pagePath": "pages/advert/advert",
         "iconPath": "pages/image/advert_nor.png",
-        "selectedIconPath": "pages/image/advert_sel.png",
+        "selectedIconPath": "pages/image/advert.png",
         "text": "活动"
       },
       {
         "pagePath": "pages/my/my",
         "iconPath": "pages/image/my_nor.png",
-        "selectedIconPath": "pages/image/my_sel.png",
+        "selectedIconPath": "pages/image/my.png",
         "text": "我的"
       }
     ]

@@ -1,0 +1,79 @@
+<!--index.wxml-->
+
+<view class="container">
+  <!-- <view class='bg-img'>
+    <image class='bgimg' src='../image/timg.jpeg'></image>
+  </view>  -->
+	<view class="page-head">
+		<view class="page-button">
+			<text class="page-target" bindtap='toto'><text class="target-value">{{weatherinfo.city_name}} {{weatherinfo.now.text}} {{weatherinfo.now.temperature}}℃</text></text>
+			<text class="page-target"><text class="target-value">{{xingqi}}</text></text>
+		</view>
+		<view class="page-canvas">
+			<canvas canvas-id="Temp" animation="{{animation}}"></canvas>
+		</view>
+	</view>
+	<view class="page-body">
+		<view class="page-state">您到现在已经走了<text class="target-num">{{allSteps}}</text>步了，相当于徒步行走<text class="target-num">{{allStepsTip}}公里</text>，多运动，更健康</view>
+
+    <!-- 柱状图  -->
+    <view class='zhuzhuangtu'>
+      <progress class='sssss' percent="{{sevenRunShowDatas[0].inf}}" active />
+      <progress class='sssss' percent="{{sevenRunShowDatas[1].inf}}" active />
+      <progress class='sssss' percent="{{sevenRunShowDatas[2].inf}}" active />
+      <progress class='sssss' percent="{{sevenRunShowDatas[3].inf}}" active />
+      <progress class='sssss' percent="{{sevenRunShowDatas[4].inf}}" active />
+      <progress class='sssss' percent="{{sevenRunShowDatas[5].inf}}" active />
+      <progress class='sssss' percent="{{sevenRunShowDatas[6].inf}}" active />
+    </view>
+
+    <view class='zhuzhuangtu-xview'>
+      <text class='x-text'>{{sevenRunShowDatas[0].day}}</text>
+      <text class='x-text'>{{sevenRunShowDatas[1].day}}</text>
+      <text class='x-text'>{{sevenRunShowDatas[2].day}}</text>
+      <text class='x-text'>{{sevenRunShowDatas[3].day}}</text>
+      <text class='x-text'>{{sevenRunShowDatas[4].day}}</text>
+      <text class='x-text'>{{sevenRunShowDatas[5].day}}</text>
+      <text class='x-text'>今</text>
+    </view>
+
+    <!-- 我的排名  -->
+    <view class='rank-list-view-bai'>
+        <text class="{{rankUserDatas.rowno>=3?'rank-small-bai':'rank-text-bai'}}">{{rankUserDatas.rowno}}</text>
+        <image class='head-img-bai' src='{{rankUserDatas.head_img}}'></image>
+        <text class='name-text-bai'>我</text>
+        <text class='step-text-bai'>{{step}}</text>
+        <view class='zan-view'>
+          <view class='zan-con' hidden='true'>
+            <text class='zan-num-bai'>{{rankUserDatas.zan_num}}</text>
+            <image class='heart-img' src='../image/heart_sel.png'></image>
+          </view>
+        </view>
+      </view>
+
+    <!-- 列表  -->
+    <view class='rank-view'>
+      <view class='rank-list-view'  wx:for="{{rankDatas}}" wx:key="{{index}}">
+        <text class="{{index >= 100? 'rank-small':'rank-text'}}" hidden='{{index + 1 < 4}}'>{{index + 1}}</text>
+        <image class='rank-img' src='../image/diyi.png' hidden='{{index + 1 != 1}}'></image>
+        <image class='rank-img' src='../image/dier.png' hidden='{{index + 1 != 2}}'></image>
+        <image class='rank-img' src='../image/disan.png' hidden='{{index + 1 != 3}}'></image> 
+        <image class='head-img' src='{{item.head_img}}'></image>
+        <text class='name-text'>{{item.nickname}}</text>
+        <text class='step-text'>{{item.steps}}</text>
+        <view class='zan-view'>
+          <view class='zan-con'>
+            <text class='zan-num'>{{item.zan_num == 0 || item.zan_num == undefined ? '0' : item.zan_num}}</text>
+            <image class='heart-img' src='../image/heart.png' hidden="{{item.is_my == '1'}}" data-stepid='{{item.id}}' data-type='1' data-ismy='{{item.is_my}}' data-zanuser='{{item.user_id}}'   bindtap='addLikeStep'></image>
+            <image class='heart-img' src='../image/heart_sel.png' hidden="{{item.is_my == '0'}}" data-stepid='{{item.id}}' data-type='0' data-ismy='{{item.is_my}}' data-zanuser='{{item.user_id}}'  bindtap='addLikeStep'></image>
+          </view>
+        </view>
+      </view>
+
+
+    </view>
+    <view class='more-view' bindtap='toMoreView' hidden='{{rankDatas.length < 20}}'>查看更多</view>
+	</view>
+
+  
+</view>

@@ -1,0 +1,119 @@
+/* pages/advert/advertDetail.wxss */
+.main-view {
+  
+}
+
+.rank-list-view {
+  position: relative;
+  width: 100%;
+  height: 140rpx;
+  background-color: #FFF;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+
+.rank-text {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 45rpx;
+  color: #444444;
+}
+
+
+.rank-small {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 35rpx;
+  color: #444444;
+}
+
+.rank-img {
+  position: absolute;
+  left: 10rpx;
+  top: 45rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.head-img {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 70rpx;
+  margin-top: 35rpx;
+  border: 1rpx solid #FFF;
+  border-radius: 38rpx;
+  background: #F0F0F0;
+}
+
+
+.name-text {
+  position: absolute;
+  left: 160rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #333;
+  font-size: 35rpx;
+}
+
+
+.step-text {
+  position: absolute;
+  right: 100rpx;
+  top: 50rpx;
+  width: 300rpx;
+  height: 40rpx;
+  color: #35D2AB;
+  text-align: right;
+  font-size: 40rpx; 
+}
+
+
+.zan-view {
+  position: absolute;
+  right: 0;
+  top: 35rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.zan-con {
+  position: relative;
+}
+
+.heart-img {
+  position: absolute;
+  left: 0;
+  top: 35rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.zan-num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40rpx;
+  height: 30rpx;
+  color: #666;
+  font-size: 25rpx;
+  text-align: center;
+}
+
+.more-view {
+  text-align: center;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 100rpx;
+  color: #999999;
+  font-size: 30rpx;
+}
